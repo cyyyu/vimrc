@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 # Install requirements
 read -p "Intall requirements[y/n]?(vim-plug): " yn
-if [[ $yn =~ [yY](es|ES)? ]]
+if [ "$yn" == 'y' ]
 then
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
