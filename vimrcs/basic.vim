@@ -37,8 +37,8 @@ command W w !sudo tee % > /dev/null
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 6 lines to the cursor - when moving vertically using j/k
-set so=6
+" Set 7 lines to the cursor - when moving vertically using j/k
+set so=7
 
 " Turn on the Wild menu
 set wildmenu
@@ -94,7 +94,7 @@ set t_vb=
 set tm=500
 
 " Add a bit extra margin to the left
-set foldcolumn=1
+set foldcolumn=0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
