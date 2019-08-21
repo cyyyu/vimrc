@@ -12,6 +12,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'junegunn/goyo.vim'
 Plug 'rust-lang/rust.vim'
+Plug 'zxqfl/tabnine-vim'
 
 " synctax check
 " https://github.com/dense-analysis/ale
