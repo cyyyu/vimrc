@@ -33,5 +33,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" asyncRun
+Plug 'skywind3000/asyncrun.vim'
+
 " Initialize plugin system
 call plug#end()
