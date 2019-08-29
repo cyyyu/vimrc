@@ -17,6 +17,9 @@ map <leader>nb :NERDTreeFromBookmark<Space>
 " => ale
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {'rust': ['rls']}
+map <leader>m :ALEGoToDefinition<cr>
+map <leader><leader> :ALEGoToTypeDefinition<cr>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => airline
