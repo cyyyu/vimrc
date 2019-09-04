@@ -227,8 +227,8 @@ vnoremap <leader>p "_dP
 vnoremap <leader>p "_dP
 
 " resize window
-nnoremap <silent> <leader>1 :resize -3<cr> 
-nnoremap <silent> <leader>2 :resize +3<cr> 
+nnoremap <silent> <leader>1 :resize -8<cr> 
+nnoremap <silent> <leader>2 :resize +8<cr> 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

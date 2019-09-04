@@ -37,4 +37,4 @@ let g:rustfmt_autosave = 1
 let g:asyncrun_open = 6
 let g:asyncrun_bell = 1
 " Quickfix window
-nnoremap <C-m> :call asyncrun#quickfix_toggle(6)<cr>
+nnoremap <C-m> :call asyncrun#quickfix_toggle(12)<cr>
