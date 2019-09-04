@@ -168,7 +168,7 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bc :Bclose<cr>:tabclose<cr>gT
+map <leader>c :Bclose<cr>:tabclose<cr>gT
 
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
@@ -224,17 +224,15 @@ vnoremap <leader>d "_d
 " without yanking it
 vnoremap <leader>p "_dP
 
+vnoremap <leader>p "_dP
+
+" resize window
+nnoremap <silent> <leader>1 :resize -3<cr> 
+nnoremap <silent> <leader>2 :resize +3<cr> 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Returns true if paste mode is enabled
-function! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    endif
-    return ''
-endfunction
-
 " Don't close window, when deleting a buffer
 command! Bclose call <SID>BufcloseCloseIt()
 function! <SID>BufcloseCloseIt()
