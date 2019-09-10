@@ -17,7 +17,7 @@ map <c-e> :NERDTreeToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {'rust': ['rls']}
 map <leader>m :ALEGoToDefinition<cr>
-map <leader><leader> :ALEGoToTypeDefinition<cr>
+map <leader>d :ALEDetail<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -42,4 +42,3 @@ nnoremap <C-m> :call asyncrun#quickfix_toggle(12)<cr>
 " => goyo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>z :Goyo<cr>
-map <leader>a :Goyo!<cr>
