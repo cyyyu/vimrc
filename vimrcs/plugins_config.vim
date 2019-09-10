@@ -11,7 +11,6 @@ let NERDTreeShowHidden=0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
 map <c-e> :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark<Space>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ale
@@ -38,3 +37,9 @@ let g:asyncrun_open = 6
 let g:asyncrun_bell = 1
 " Quickfix window
 nnoremap <C-m> :call asyncrun#quickfix_toggle(12)<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => goyo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>z :Goyo<cr>
+map <leader>a :Goyo!<cr>
