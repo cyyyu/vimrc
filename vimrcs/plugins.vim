@@ -36,5 +36,10 @@ Plug 'vim-airline/vim-airline-themes'
 " asyncRun
 Plug 'skywind3000/asyncrun.vim'
 
+" ack
+" enhanced `grep`
+" if ack is not installed yet, install it from here: https://beyondgrep.com/install/
+Plug 'mileszs/ack.vim'
+
 " Initialize plugin system
 call plug#end()
