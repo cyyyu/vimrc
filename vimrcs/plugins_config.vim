@@ -19,6 +19,10 @@ map <leader>v :NERDTreeFind<cr>
 let g:ale_linters = {'rust': ['rls']}
 map <leader>m :ALEGoToDefinition<cr>
 map <leader>d :ALEDetail<cr>
+map <leader>af :ALEFirst<cr>
+map <leader>al :ALELast<cr>
+map <leader>ap :ALEPrevious<cr>
+map <leader>an :ALENext<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
