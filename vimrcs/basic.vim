@@ -230,6 +230,9 @@ vnoremap <leader>p "_dP
 nnoremap <silent> <leader>1 :resize -8<cr> 
 nnoremap <silent> <leader>2 :resize +8<cr> 
 
+" Set the filetype for tsx
+au BufRead,BufNewFile *.tsx set filetype=typescript
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
