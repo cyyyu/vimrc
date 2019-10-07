@@ -1,4 +1,4 @@
-""""""""""""""""""""""""""""""
+
 " => FZF
 """"""""""""""""""""""""""""""
 map <leader>f :FZF<cr>
@@ -17,8 +17,8 @@ map <leader>v :NERDTreeFind<cr>
 " => ale
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {'rust': ['rls']}
-map <leader>m :ALEGoToDefinition<cr>
-map <leader>d :ALEDetail<cr>
+map <leader>am :ALEGoToDefinition<cr>
+map <leader>ad :ALEDetail<cr>
 map <leader>af :ALEFirst<cr>
 map <leader>al :ALELast<cr>
 map <leader>ap :ALEPrevious<cr>
@@ -40,10 +40,14 @@ let g:rustfmt_autosave = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:asyncrun_open = 6
 let g:asyncrun_bell = 1
-" Quickfix window
-nnoremap <C-m> :call asyncrun#quickfix_toggle(12)<cr>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => goyo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>z :Goyo<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => rigrep
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>g :Rg 

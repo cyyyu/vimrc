@@ -44,12 +44,7 @@ set so=7
 set wildmenu
 
 " Ignore compiled files
-set wildignore=*.o,*~,*.pyc
-if has("win16") || has("win32")
-    set wildignore+=.git\*,.hg\*,.svn\*
-else
-    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
-endif
+set wildignore=*.o,*~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store,*/node_modules/*
 
 "Always show current position
 set ruler
@@ -111,6 +106,11 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
+" Quickfix window
+nnoremap <C-m> :call asyncrun#quickfix_toggle(12)<cr>
+map <leader>qn :cn<cr>
+map <leader>qp :cp<cr>
+map <leader>qc :.cc<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -155,9 +155,6 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
@@ -193,9 +190,6 @@ au TabLeave * let g:lasttab = tabpagenr()
 " Super useful when editing files in the same directory
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
-" Switch CWD to the directory of the open buffer
-map <leader>cd :cd %:p:h<cr>:pwd<cr>
-
 " Specify the behavior when switching between buffers 
 try
   set switchbuf=useopen,usetab,newtab
@@ -213,17 +207,12 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " Quickly quit
 map <leader>qq :q<cr>
 
-" Quickly open a markdown buffer for scribble
-map <leader>x :e ~/buffer.md<cr>
-
 " https://superuser.com/questions/321547/how-do-i-replace-paste-yanked-text-in-vim-without-yanking-the-deleted-lines
 " delete without yanking
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
 " replace currently selected text with default register
 " without yanking it
-vnoremap <leader>p "_dP
-
 vnoremap <leader>p "_dP
 
 " resize window
@@ -234,6 +223,9 @@ nnoremap <silent> <leader>4 :vertical resize +4<cr>
 
 " Set the filetype for tsx
 au BufRead,BufNewFile *.tsx set filetype=typescript
+
+" To reload file
+map <leader>r :checktime<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

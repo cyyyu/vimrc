@@ -2,7 +2,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Plugins
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
 Plug 'prettier/vim-prettier'
 Plug 'jiangmiao/auto-pairs'
@@ -36,10 +36,8 @@ Plug 'vim-airline/vim-airline-themes'
 " asyncRun
 Plug 'skywind3000/asyncrun.vim'
 
-" ack
-" enhanced `grep`
-" if ack is not installed yet, install it from here: https://beyondgrep.com/install/
-Plug 'mileszs/ack.vim'
+" 'brew install rg' first
+Plug 'jremmen/vim-ripgrep'
 
 " Initialize plugin system
 call plug#end()
