@@ -110,7 +110,7 @@ set ffs=unix,dos,mac
 nnoremap <C-m> :call asyncrun#quickfix_toggle(12)<cr>
 map <leader>qn :cn<cr>
 map <leader>qp :cp<cr>
-map <leader>qc :.cc<cr>
+map <leader>qo :.cc<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
