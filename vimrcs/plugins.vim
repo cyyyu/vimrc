@@ -39,5 +39,8 @@ Plug 'skywind3000/asyncrun.vim'
 " 'brew install rg' first
 Plug 'jremmen/vim-ripgrep'
 
+" git blame
+Plug 'zivyangll/git-blame.vim'
+
 " Initialize plugin system
 call plug#end()
