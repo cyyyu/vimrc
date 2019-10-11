@@ -22,3 +22,5 @@ Below are the shortcuts that I use everyday, where `<leader>` has been binded to
 * `<leader>p` prettier format, only available when prettier is installed globally.
 * `<leader>m` go to definition, short for `ALEGoToDefinition`.
 * `<leader>l` next buffer, short for `:bn`.
+* `<leader>s` git blame
+* `<leader>qo` (in quickfix window)open the file
