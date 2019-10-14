@@ -29,3 +29,10 @@ Below are the shortcuts that I use everyday, where `<leader>` has been binded to
 * `<leader>al` go to last line of error.
 * `<leader>an` go to next line of error.
 * `<leader>ap` go to previous line of error.
+
+## Dependencies
+
+Some plugins require these dependencies installed globally:
+
+* prettier: `brew install prettier`
+* rg: `brew install rg`
