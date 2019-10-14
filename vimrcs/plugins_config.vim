@@ -62,5 +62,13 @@ nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-autoformat
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" format on saving
-au BufWrite * :Autoformat
+let g:formatdef_prettier = '"prettier --stdin --stdin-filepath ".expand("%:p")." --tab-width=".shiftwidth()'
+let g:formatters_javascript = ['prettier']
+let g:formatters_scss = ['prettier']
+let g:formatters_css = ['prettier']
+let g:formatters_less = ['prettier']
+let g:formatters_typescript = ['prettier']
+let g:formatters_markdown = ['prettier']
+let g:formatters_graphql = ['prettier']
+let g:formatters_json = ['prettier']
+nmap <leader>p :Autoformat<cr>
