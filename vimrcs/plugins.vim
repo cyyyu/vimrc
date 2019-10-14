@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
 " Plugins
 Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
-Plug 'prettier/vim-prettier'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdcommenter'
@@ -41,6 +40,9 @@ Plug 'jremmen/vim-ripgrep'
 
 " git blame
 Plug 'zivyangll/git-blame.vim'
+
+" format
+Plug 'Chiel92/vim-autoformat'
 
 " Initialize plugin system
 call plug#end()

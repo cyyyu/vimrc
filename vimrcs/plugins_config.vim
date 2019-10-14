@@ -23,6 +23,8 @@ map <leader>af :ALEFirst<cr>
 map <leader>al :ALELast<cr>
 map <leader>ap :ALEPrevious<cr>
 map <leader>an :ALENext<cr>
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚡'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -56,3 +58,9 @@ map <leader>g :Rg
 " => git blame
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-autoformat
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" format on saving
+au BufWrite * :Autoformat

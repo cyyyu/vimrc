@@ -19,8 +19,13 @@ Below are the shortcuts that I use everyday, where `<leader>` has been binded to
 * `<leader>tn` new tab.
 * `<leader>tc` close current tab.
 * `<leader>qq` short for `:q`.
-* `<leader>p` prettier format, only available when prettier is installed globally.
 * `<leader>m` go to definition, short for `ALEGoToDefinition`.
 * `<leader>l` next buffer, short for `:bn`.
-* `<leader>s` git blame
-* `<leader>qo` (in quickfix window)open the file
+* `<leader>s` git blame.
+* `<leader>qo` (in quickfix window)open the file.
+* `<leader>am` go to definition.
+* `<leader>ad` go to error detail.
+* `<leader>af` go to first line of error.
+* `<leader>al` go to last line of error.
+* `<leader>an` go to next line of error.
+* `<leader>ap` go to previous line of error.
