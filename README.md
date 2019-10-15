@@ -36,3 +36,4 @@ Some plugins require these dependencies installed globally:
 
 * prettier: `brew install prettier`
 * rg: `brew install rg`
+* clang-format: `brew install clang-format`(for c, cpp code formatting)
