@@ -44,5 +44,8 @@ Plug 'zivyangll/git-blame.vim'
 " format
 Plug 'Chiel92/vim-autoformat'
 
+" glsl highlight
+Plug 'tikhomirov/vim-glsl'
+
 " Initialize plugin system
 call plug#end()
