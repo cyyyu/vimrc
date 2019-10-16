@@ -72,3 +72,8 @@ let g:formatters_markdown = ['prettier']
 let g:formatters_graphql = ['prettier']
 let g:formatters_json = ['prettier']
 nmap <leader>p :Autoformat<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-glsl
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
