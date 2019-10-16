@@ -229,6 +229,9 @@ au BufRead,BufNewFile *.tsx set filetype=typescript
 " To reload file
 map <leader>r :checktime<CR>
 
+" make 'yy', 'pp' work with clipboard
+set clipboard=unnamed
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
