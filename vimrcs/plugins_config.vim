@@ -63,7 +63,8 @@ nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 " => vim-autoformat
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:formatdef_prettier = '"prettier --stdin --stdin-filepath ".expand("%:p")." --parser ".&filetype'
-let g:formatters_javascript = ['prettier']
+let g:formatdef_prettier_js = '"prettier --stdin --stdin-filepath ".expand("%:p")." --parser babel"'
+let g:formatters_javascript = ['prettier_js']
 let g:formatters_scss = ['prettier']
 let g:formatters_css = ['prettier']
 let g:formatters_less = ['prettier']
