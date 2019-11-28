@@ -169,6 +169,9 @@ map <C-l> <C-W>l
 " Close the current buffer
 map <leader>c :Bclose<cr>:tabclose<cr>gT
 
+" Close all hidden buffer, skip modified
+map <leader>bc :call DeleteHiddenBuffers()<cr>
+
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
 
@@ -275,4 +278,14 @@ function! VisualSelection(direction, extra_filter) range
 
     let @/ = l:pattern
     let @" = l:saved_reg
+endfunction
+
+function! DeleteHiddenBuffers()
+  let tpbl=[]
+  call map(range(1, tabpagenr('$')), 'extend(tpbl, tabpagebuflist(v:val))')
+  for buf in filter(range(1, bufnr('$')), 'bufexists(v:val) && index(tpbl, v:val)==-1')
+    if getbufvar(buf, '&mod') == 0
+      silent execute 'bwipeout' buf
+    endif
+  endfor
 endfunction
