@@ -36,7 +36,7 @@ let g:airline_theme='molokai'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => asyncRun
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:asyncrun_open = 6
+let g:asyncrun_open = 16
 let g:asyncrun_bell = 1
 
 
