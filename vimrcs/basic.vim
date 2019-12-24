@@ -107,7 +107,7 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 " Quickfix window
-nnoremap <C-m> :call asyncrun#quickfix_toggle(12)<cr>
+nnoremap <C-m> :call asyncrun#quickfix_toggle(16)<cr>
 map <leader>qn :cn<cr>
 map <leader>qp :cp<cr>
 map <leader>qo :.cc<cr>
