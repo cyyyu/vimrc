@@ -68,6 +68,7 @@ let g:formatters_typescript = ['prettier']
 let g:formatters_markdown = ['prettier']
 let g:formatters_graphql = ['prettier']
 let g:formatters_json = ['prettier']
+let g:formatters_html = ['prettier']
 nmap <leader>p :Autoformat<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
