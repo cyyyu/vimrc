@@ -24,6 +24,7 @@ map <leader>af :ALEFirst<cr>
 map <leader>al :ALELast<cr>
 map <leader>ap :ALEPrevious<cr>
 map <leader>an :ALENext<cr>
+map <leader>ah :ALEHover<cr>
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚡'
 
