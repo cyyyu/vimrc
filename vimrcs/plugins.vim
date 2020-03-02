@@ -13,6 +13,11 @@ Plug 'junegunn/goyo.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'zxqfl/tabnine-vim'
 
+" automatically resize window
+" https://github.com/camspiers/lens.vim
+Plug 'camspiers/animate.vim'
+Plug 'camspiers/lens.vim'
+
 " synctax check
 " https://github.com/dense-analysis/ale
 Plug 'dense-analysis/ale'
