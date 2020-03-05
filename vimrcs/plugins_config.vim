@@ -76,3 +76,8 @@ nmap <leader>p :Autoformat<cr>
 " => vim-glsl
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => lens
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:lens#disabled_filetypes = ['nerdtree', 'fzf']
