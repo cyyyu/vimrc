@@ -2,7 +2,7 @@
 " => FZF
 """"""""""""""""""""""""""""""
 map <leader>f :FZF<cr>
-let $FZF_DEFAULT_COMMAND='rg --files'
+let $FZF_DEFAULT_COMMAND='rg --files --hidden'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
