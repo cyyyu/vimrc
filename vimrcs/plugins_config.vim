@@ -21,9 +21,7 @@ let g:ale_linters = {'rust': ['rls']}
 map <leader>am :ALEGoToDefinition<cr>
 map <leader>ad :ALEDetail<cr>
 map <leader>af :ALEFirst<cr>
-map <leader>al :ALELast<cr>
-map <leader>ap :ALEPrevious<cr>
-map <leader>an :ALENext<cr>
+map <leader>an :ALEFix<cr>
 map <leader>ah :ALEHover<cr>
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚡'
