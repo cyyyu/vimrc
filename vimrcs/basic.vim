@@ -235,6 +235,10 @@ map <leader>r :checktime<CR>
 " make 'yy', 'pp' work with clipboard
 set clipboard=unnamed
 
+" disable commands history by bind the shortcut to nothing
+nnoremap q: <nop>
+nnoremap Q <nop>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
