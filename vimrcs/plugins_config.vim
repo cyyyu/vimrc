@@ -37,7 +37,8 @@ let g:airline_theme='molokai'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:asyncrun_open = 16
 let g:asyncrun_bell = 1
-
+map <leader>a :AsyncRun 
+map <leader>as :AsyncStop<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => goyo
