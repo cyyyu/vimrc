@@ -10,7 +10,7 @@ let $FZF_DEFAULT_COMMAND='rg --files --hidden'
 let g:NERDTreeWinPos = "left"
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
-let g:NERDTreeWinSize=35
+let g:NERDTreeWinSize=30
 map <c-e> :NERDTreeToggle<cr>
 map <leader>v :NERDTreeFind<cr>
 
