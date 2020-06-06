@@ -17,7 +17,7 @@ map <leader>v :NERDTreeFind<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ale
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ale_linters = {'rust': ['rls']}
+let g:ale_linters = {'rust': ['rls'], 'go': ['gopls']}
 map <leader>am :ALEGoToDefinition<cr>
 map <leader>ad :ALEDetail<cr>
 map <leader>af :ALEFirst<cr>
