@@ -91,6 +91,11 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=0
 
+" folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
