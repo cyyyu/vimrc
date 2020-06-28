@@ -19,6 +19,7 @@ map <leader>v :NERDTreeFind<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {'rust': ['rls'], 'go': ['gopls']}
 map <leader>am :ALEGoToDefinition<cr>
+map <leader>at :ALEGoToTypeDefinition<cr>
 map <leader>ad :ALEDetail<cr>
 map <leader>af :ALEFirst<cr>
 map <leader>an :ALEFix<cr>
