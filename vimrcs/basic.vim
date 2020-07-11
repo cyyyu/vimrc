@@ -97,6 +97,9 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=2
 
+" statusline
+set laststatus=2
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
