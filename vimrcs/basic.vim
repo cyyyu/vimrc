@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Forked from github.com/amix/vimrc and customized 
-" Remove a bunch of unused and added what I need
+" Removed a bunch of unused and added what I need
 "
 " Maintainer: 
 "       Chuang Yu — @cyyyu
